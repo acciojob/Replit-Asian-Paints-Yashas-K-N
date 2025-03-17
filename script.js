@@ -1,5 +1,5 @@
 //your JS code here. If required.
-const gridContainer= document.querySelector(".gridContainer")
+const gridContainer= document.querySelector(".grid")
  const form =document.querySelector("#form")
 let previousSelectedElement = null;
 
