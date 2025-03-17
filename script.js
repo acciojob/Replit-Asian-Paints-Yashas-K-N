@@ -3,7 +3,12 @@ const gridContainer= document.querySelector(".grid")
  const form =document.querySelector("#form")
 let previousSelectedElement = null;
 
-
+function removePreviousColor(){
+   if(previousSelectedElement){
+      previousSelectedElement.style.backgroundColor = "white";
+         }
+ 
+}
  form.addEventListener("submit",function(event){
     event.preventDefault();
     let cellId = form.inputId.value;
@@ -11,10 +16,8 @@ let previousSelectedElement = null;
      
     let cell = document.getElementById(cellId);
       cell.style.backgroundColor = selectedColor;
-      if(previousSelectedElement){
-         previousSelectedElement.style.backgroundColor = "white";
-            }
-    
+     
+      removePreviousColor();
       previousSelectedElement = cell;
       
  });
@@ -26,6 +29,11 @@ let previousSelectedElement = null;
      gridContainer.appendChild(gridItem);
 
  }
+
+//  document.addEventListener("contextmenu",(event)=>{
+//     event.preventDefault();
+//     console.log("inside submit button")
+//  });
 
 //  document.addEventListener("contextmenu",(event)=>{
 //     event.preventDefault();
