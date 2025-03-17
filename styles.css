@@ -16,7 +16,7 @@
 
 .grid-Item {
     display: flex;
-   align-items: center;
+	align-items: center;
    justify-content: center;
    transition:3s;
 } 

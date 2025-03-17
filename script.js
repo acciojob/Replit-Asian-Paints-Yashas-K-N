@@ -5,7 +5,9 @@ form.addEventListener("submit", function(event) {
     let selectedColor = form.color.value;
 
     // First, remove the color from the previously selected cell
-    removePreviousColor();
+    if (previousSelectedElement) {
+        removePreviousColor();
+    }
 
     // Then, change the color of the newly selected cell
     let cell = document.getElementById(cellId);
@@ -16,6 +18,7 @@ form.addEventListener("submit", function(event) {
 
     // Reset the form
     form.reset();
+});
 });
 //  document.addEventListener("contextmenu",(event)=>{
 //     event.preventDefault();
