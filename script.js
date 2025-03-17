@@ -19,7 +19,7 @@ form.addEventListener("submit", function(event) {
     // Reset the form
     form.reset();
 });
-});
+
 //  document.addEventListener("contextmenu",(event)=>{
 //     event.preventDefault();
 //     console.log("inside submit button")
