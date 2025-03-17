@@ -9,15 +9,17 @@
 
 <body>
   
-    <div class="grid"></div>
+    <div class="grid" id=grid-container></div>
     <form id="form">
         <input type="text" 
-        name="inputId"
-        id="input-id"
+			min="1";
+			max="1";
+			 name="inputId"
+        id="block_id"
          required placeholder="enter cell id"
          />
         <input type="color" name="color" id="colour-id" required />
-        <button>Add color</button>
+        <button id="change_button">Add color</button>
     </form >
    <script src="./script.js"></script>
 </body>
