@@ -1,1 +1,29 @@
 /*  your css code here. If applicable */
+.grid {
+    display: inline-grid;
+    grid-template-columns: repeat(3,180px);
+    border: 2px solid #e7e7e7;
+    background-color: #e7e7e7;
+    gap: 2px;
+    box-shadow: 2px 2px 25px #e7e7e7;
+    
+}
+/* #i {
+    display: flex;
+   align-items: center;
+   justify-content: center;
+} */
+
+.grid-Item {
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   transition:3s;
+} 
+
+.grid div {
+    height:180px;
+    background-color:white;
+}
+
+
