@@ -1,5 +1,5 @@
 /*  your css code here. If applicable */
-.grid {
+.grid-container {
     display: inline-grid;
     grid-template-columns: repeat(3,180px);
     border: 2px solid #e7e7e7;
@@ -21,7 +21,7 @@
    transition:3s;
 } 
 
-.grid div {
+.grid-container div {
     height:180px;
     background-color:white;
 }
