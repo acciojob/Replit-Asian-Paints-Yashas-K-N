@@ -2,8 +2,8 @@
 .grid-container {
     display: inline-grid;
     grid-template-columns: repeat(3,180px);
-    border: 2px solid  #e7e7e7;
-    background-color: rgb(255,0,0);
+    border: 2px solid #e7e7e7  ;
+    background-color: #e7e7e7;
     gap: 2px;
     box-shadow: 2px 2px 25px #e7e7e7;
     
@@ -19,11 +19,12 @@
 	align-items: center;
    justify-content: center;
    transition:3s;
+	background-color:rgb(255, 0, 0);
 } 
 
 .grid-container div {
     height:180px;
-    background-color:#e7e7e7;
+    background-color:rgb(255, 0, 0);
 }
 
 
