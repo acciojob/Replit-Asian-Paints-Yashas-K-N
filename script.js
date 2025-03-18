@@ -26,7 +26,7 @@ function removePreviousColor(){
     const gridItem = document.createElement("div");
      gridItem.id = i; 
      gridItem.innerText=i
-     gridItem.className="grid-Item";
+     gridItem.className="grid-item";
      gridContainer.appendChild(gridItem);
 
  }
